@@ -22,7 +22,7 @@ object SonarSweep extends App {
         depthCalcHelper(depthList, index + 1, depthList(index).toInt, noDepthIncreasesTemp)
       }
     }
-    depthCalcHelper(depthList, 1, depthList(0).toInt,0)
+    depthCalcHelper(depthList, 1, depthList(0).toInt, 0)
   }
 
   val fileList = Source.fromFile("./day1.txt").getLines.toArray
